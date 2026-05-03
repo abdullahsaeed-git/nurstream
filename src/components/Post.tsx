@@ -6,7 +6,6 @@ import {
   ChevronLeft,
   Bookmark,
   Play,
-  Type,
   Volume2,
   VolumeX,
   Pause,

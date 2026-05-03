@@ -1,9 +1,8 @@
 import React, { useState, useMemo, useEffect, useRef } from 'react';
 import { 
   ChevronLeft, Heart, Bookmark, MessageCircle, MoreHorizontal, LogOut, Settings, 
-  Plus, X, Search, ChevronRight, LayoutGrid, Image as ImageIcon, Film, Users,
-  Grid, Lock, Check, UserPlus, UserCheck, Play, ArrowRight, Link as LinkIcon,
-  Trophy, Calendar, Star, Zap, SendHorizontal, MessageSquare, Share2, ShieldAlert, Type, MoreVertical, Trash2, BadgeCheck, List, Eye, EyeOff
+  Plus, X, Search, LayoutGrid, Image as ImageIcon, Film, Users,
+  Grid, Lock, Play, Link as LinkIcon, Star, SendHorizontal, MessageSquare, Share2, ShieldAlert, Type, MoreVertical, Trash2, BadgeCheck, List, Eye, EyeOff
 } from 'lucide-react';
 import type { Database, Post, User, Message } from '../types';
 import { ReelVideoItem, PostCardPreviewRef } from './Post';

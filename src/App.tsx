@@ -1,4 +1,4 @@
-import React, { useState, useMemo, useEffect } from "react";
+import  { useState, useMemo, useEffect } from "react";
 import { ShieldCheck, MessageCircle } from "lucide-react";
 import { AppShell, Navbar, LoginView } from "./components/Shared";
 import { ReelVideoItem, PostCardPreviewRef } from "./components/Post";

@@ -2,7 +2,7 @@
 
 NurStream is a web application built with React, TypeScript, and Vite.
 
-> 📝 **Note:** Modern streaming web app built with React, TypeScript & Vite ⚡️
+> 📝 **Live Demo** [ Nurstream Social](https://nurstream-social.netlify.app)⚡️
 
 ## Features
 

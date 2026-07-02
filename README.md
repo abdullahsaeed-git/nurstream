@@ -1,73 +1,102 @@
-# React + TypeScript + Vite
+# NurStream
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+NurStream is a web application built with React, TypeScript, and Vite.
 
-Currently, two official plugins are available:
+> 📝 **Note:** This repo doesn't currently have a public description. Replace this section with a short summary of what NurStream does (e.g. what kind of streaming/content experience it provides, who it's for).
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Features
 
-## React Compiler
+- ⚡️ Fast development experience powered by [Vite](https://vitejs.dev)
+- ⚛️ Built with [React](https://react.dev) and [TypeScript](https://www.typescriptlang.org)
+- 🧹 Linting via [ESLint](https://eslint.org)
+- 📦 Modern tooling with hot module replacement (HMR)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+> Update this list with the app's real feature set.
 
-## Expanding the ESLint configuration
+## Tech Stack
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- **Frontend:** React + TypeScript
+- **Bundler / Dev server:** Vite
+- **Linting:** ESLint
+- **Package management:** npm
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## Getting Started
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+### Prerequisites
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+- [Node.js](https://nodejs.org/) (LTS recommended)
+- npm (comes bundled with Node.js)
+
+### Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/abdullahsaeed-git/nurstream.git
+cd nurstream
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Install dependencies:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+npm install
 ```
+
+### Running the Development Server
+
+```bash
+npm run dev
+```
+
+This will start the Vite dev server. Open the printed local URL (typically `http://localhost:5173`) in your browser.
+
+### Building for Production
+
+```bash
+npm run build
+```
+
+The optimized production build will be output to the `dist/` folder.
+
+### Previewing the Production Build
+
+```bash
+npm run preview
+```
+
+### Linting
+
+```bash
+npm run lint
+```
+
+## Project Structure
+
+```
+nurstream/
+├── public/          # Static assets
+├── src/             # Application source code
+├── index.html       # HTML entry point
+├── package.json     # Project metadata and scripts
+├── tsconfig*.json    # TypeScript configuration
+├── vite.config.ts   # Vite configuration
+└── eslint.config.js # ESLint configuration
+```
+
+## Contributing
+
+Contributions are welcome! To contribute:
+
+1. Fork the repository
+2. Create a new branch (`git checkout -b feature/your-feature`)
+3. Commit your changes (`git commit -m "Add your feature"`)
+4. Push to the branch (`git push origin feature/your-feature`)
+5. Open a Pull Request
+
+## License
+
+No license has been specified for this project yet. Consider adding a `LICENSE` file (e.g. MIT) to clarify how others can use this code.
+
+## Author
+
+- [abdullahsaeed-git](https://github.com/abdullahsaeed-git)
